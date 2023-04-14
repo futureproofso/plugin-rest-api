@@ -6,7 +6,7 @@ module.exports = function getApiProperties (http, stage) {
     StageName: stage,
     OpenApiVersion: '3.0.1',
     DefinitionBody: getOpenApi(http),
-    EndpointConfiguration: 'REGIONAL',
+    EndpointConfiguration: 'EDGE',
     BinaryMediaTypes: [ '*~1*' ], // wat
     MinimumCompressionSize: 0,
   }
